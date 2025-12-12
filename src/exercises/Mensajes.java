@@ -14,18 +14,25 @@ public class Mensajes {
 		FileReader reader = null;
 		BufferedReader buffer = null;
 		
+		//int saltosLinea=0;
+		
+		// IMPRESION DE PRUEBA DEL CONTENIDO DEL ARCHIVO
 		try {
 			reader = new FileReader(poem);
 			buffer = new BufferedReader(reader);
 			
 			String linea;
 			while( (linea=buffer.readLine()) != null) {
-			System.out.println(linea);
+				
+				System.out.println(linea);
 				}
-		}
+			}
 		catch(Exception err){
 			err.printStackTrace();
 			}
+		
+		
+		
 	}
 
 }
