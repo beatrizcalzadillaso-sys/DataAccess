@@ -9,7 +9,7 @@ public class Mensajes {
 
 	
 	public static void main(String[] args) {
-		File poem = new File ("los_zapaticos_de_rosa.txt");
+		File msg = new File ("mensaje.txt");
 
 		FileReader reader = null;
 		BufferedReader buffer = null;
@@ -18,7 +18,7 @@ public class Mensajes {
 		
 		// IMPRESION DE PRUEBA DEL CONTENIDO DEL ARCHIVO
 		try {
-			reader = new FileReader(poem);
+			reader = new FileReader(msg);
 			buffer = new BufferedReader(reader);
 			
 			String linea;
